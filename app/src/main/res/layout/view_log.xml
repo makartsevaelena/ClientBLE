@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="1dp"
+        tools:layout_editor_absoluteX="1dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="logs"
+                android:textAlignment="center"/>
+
+        <Button
+                android:id="@+id/clear_log_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="clear"/>
+
+        <ScrollView
+                android:id="@+id/log_scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="top"
+                android:layout_weight="1">
+
+            <TextView
+                    android:id="@+id/log_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+        </ScrollView>
+
+</LinearLayout>
